@@ -1,2 +1,2 @@
 # imkaka.github.io
-Profile Page
+Personal blog and portfolio website.
