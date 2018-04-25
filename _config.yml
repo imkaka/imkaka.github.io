@@ -1,2 +1,5 @@
 name: Anil Khatri, Kaka'
-markdown: kramdown 
+markdown: kramdown
+permalink: /:title.html
+plugins:
+  - jekyll-sitemap 
