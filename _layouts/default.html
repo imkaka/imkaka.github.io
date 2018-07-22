@@ -3,64 +3,101 @@
 	<head>
 		<title>{{ page.title }}</title>
 
-    <!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/main.css">
-		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <!-- link to main stylesheet & materialize css files. -->
+		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}css/materialize.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+     -->
      
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--  Font -->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
 
-	<meta property="og:image" content="http://imkaka.github.io/img/kaka.jpg" />
-	<meta property="og:image:type" content="image/jpeg" />
-	<meta property="og:image:width" content="960" />
-	<meta property="og:image:height" content="889" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Anil Khatri" />
-	<meta property="og:description" content="Anil Khatri _imkaka http://twitter.com/_imkaka" />
-	<meta property="og:url" content="http://imkaka.github.io" />
-	<meta property="og:site_name" content="imkaka.github.io" />
+	  <meta property="og:image" content="http://imkaka.github.io/img/kaka.jpg" />
+	  <meta property="og:image:type" content="image/jpeg" />
+	  <meta property="og:image:width" content="960" />
+	  <meta property="og:image:height" content="889" />
+	  <meta property="og:locale" content="en_US" />
+	  <meta property="og:type" content="article" />
+	  <meta property="og:title" content="Anil Khatri" />
+	  <meta property="og:description" content="Anil Khatri _imkaka http://twitter.com/_imkaka" />
+	  <meta property="og:url" content="http://imkaka.github.io" />
+	  <meta property="og:site_name" content="imkaka.github.io" />
 
-	<style>
-	html{
-		text-align: center;
-	}
-
-	</style>
 	</head>
+
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-                        <li><a href="https://imkaka10.wordpress.com/" target="_blank">Blog</a></li>
-	        	<li><a href="/projects">Projects</a></li>
-        		<li><a href="/cv">Resume</a></li>
+      <!--<div class="container">-->
+        <div class = "navbar-fixed">
+        		 <nav class = "blue lighten-2">
+              <div class="container">
+               <div class="nav-wrapper">
+                 <a href="/" class="brand-logo">Anil Khatri</a>
+                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" >menu</i></a>
+            		 <ul class="right hide-on-med-and-down " id = "navList">
+                		<li class="hoverable"><a href="/">Home</a></li>
+                    <li class="hoverable"><a href="https://imkaka10.wordpress.com/" target="_blank">Blog</a></li>
+        	        	<li class="hoverable"><a href="/projects">Projects</a></li>
+                		<li class="hoverable"><a href="/cv">Resume</a></li>
+                    <li class="hoverable"><a href= "/contact">Contact</a></li>
 
-    		</ul>
-		</nav>
-		<div class="container">
-    		{{ content }}
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:anil.soccer.khatri@gmail.com" target="_blank"><img  calss="res"src="{{ site.baseurl }}img/mail.png" class="responsive-img"></a></li>
-        		<li><a href="https://github.com/imkaka" target="_blank"><img  calss="res"src="{{ site.baseurl }}img/github.png" class="responsive-img"></a></li>
-                        <li><a href="https://twitter.com/_imkaka" target="_blank"><img  calss="res"src="{{ site.baseurl }}img/twitter.png" class="responsive-img"></a></li>
-                        <li><a href="https://www.linkedin.com/in/anil-khatri-0841223a/" target="_blank"><img  calss="res"src="{{ site.baseurl }}img/linkedin.png" class="responsive-img"></a></li>
-                        <li><a href="https://www.hackerrank.com/imKaka?hr_r=1" target="_blank"><img  calss="res"src="{{ site.baseurl }}img/hackerRank.png" class="responsive-img"></a></li>
-			<li><a href="https://www.imkaka10.wordpress.com" target="_blank"><img  calss="res"src="{{ site.baseurl }}img/wordpress.png" class="responsive-img"></a></li>
+            		 </ul>
+                </div>
+               </div>
+              </nav>
+        </div>
+        <ul class="sidenav blue lighten-2" id = "mobile-demo">
+                    <li class="hoverable"><a href="/" class = "white-text">Home</a></li>
+                    <li class="hoverable"><a href="https://imkaka10.wordpress.com/" target="_blank" class = "white-text">Blog</a></li>
+                    <li class="hoverable"><a class = "white-text" href="/projects">Projects</a></li>
+                    <li class="hoverable"><a class = "white-text" href="/cv">Resume</a></li>
+                    <li class="hoverable"><a class = "white-text" href= "/contact">Contact</a></li>
 
-			</ul>
-			<div class="row">
-		          <div class="col s4 offset-s4">
-		             <h6 class="center-align"><a class="center-align" style="color: #000000" href="http://madewithlove.org.in" target="_blank">Made with <span style="color: #e74c3c"  >&hearts;</span> in India</a>
-		             </h6>
-		          </div>
+         </ul>
+    		<div class="container center-align">
+        		{{ content }}
+    		</div><!-- /.container -->
+        <div class ="center-align ">
+    		  <ul id = "soc">
+            	<li><a href="mailto:anil.soccer.khatri@gmail.com" target="_blank"><img src="{{ site.baseurl }}img/mail.png" class="responsive-img"></a></li>
+            	<li><a href="https://github.com/imkaka" target="_blank"><img src="{{ site.baseurl }}img/github.png" class="responsive-img"></a></li>
+              <li><a href="https://twitter.com/_imkaka" target="_blank"><img src="{{ site.baseurl }}img/twitter.png" class="responsive-img"></a></li>
+              <li><a href="https://www.linkedin.com/in/anil-khatri-0841223a/" target="_blank"><img src="{{ site.baseurl }}img/linkedin.png" class="responsive-img"></a></li>
+              <li><a href="https://www.hackerrank.com/imKaka?hr_r=1" target="_blank"><img src="{{ site.baseurl }}img/hackerRank.png" class="responsive-img"></a></li>
+    			     <li><a href="https://www.imkaka10.wordpress.com" target="_blank"><img src="{{ site.baseurl }}img/wordpress.png" class="responsive-img"></a></li>
 
-		       </div>
+    		   </ul>
+         </div>  
+         <footer>
+    			<div class="row">
+    		          <div class="col s4 offset-s4">
+    		             <h6 class="center-align"><a class="center-align" style="color: #000000" href="http://madewithlove.org.in" target="_blank">Made with <span style="color: #e74c3c"  >&hearts;</span> in India</a>
+    		             </h6>
+    		          </div>
 
-		</footer>
+    		  </div>
 
+    		</footer>
+    <!--</div>-->
+      <!-- Jquery and m.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>-->
+      
+      <!--<script type="text/javascript" src = "js/materialize.js"></script>-->
+      <script type="text/javascript" src = "{{site.baseurl}}js/materialize.min.js"></script>
+      
+
+
+      <script>
+         $(document).ready(function(){
+          $('.sidenav').sidenav();
+
+         });
+
+      </script>
+    
 	</body>
 </html>

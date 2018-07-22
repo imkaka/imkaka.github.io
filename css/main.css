@@ -1,19 +1,20 @@
-//Styling
 
+/*
 body {
    		display: flex;
     	min-height: 100vh;
     	flex-direction: column;
-    text-align: center;
-    margin: 60px auto;
-    width: 70%;
-    background:#DDDDDD;
+        text-align: center;
+        margin: 60px auto;
+        width: 70%;
+        background:#DDDDDD;
 }
 main {
-    flex: 1 0 auto;
+      flex: 1 0 auto;
 }
 
 nav ul, footer ul {
+    
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: circle;
@@ -23,6 +24,7 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
     color: #999;
@@ -51,4 +53,13 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+*/
+body {
+
+   /* color: rgba(255,255,255,0.8);*/
+}
+
+ul#soc li {
+display: inline;
 }
