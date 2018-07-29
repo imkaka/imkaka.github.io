@@ -1,12 +1,19 @@
 
 title: Anil Khatri(@_imkaka)
-name: Anil Khatri 
+name: Anil Khatri
 email: anil.soccer.khatri@gmail.com
 description: Anil Khatri's personal blog and portfolio website | Software Developer at Intern HPC Sphere | Exploring the CS World | Footballer from India.
 baseurl: /
 url: http://imkaka.github.io
 twitter: _imkaka
 github:  imkaka
+facebook: ak10s
+hackerrank: imKaka
+telegram: imkaka
+stackoverflow: users/7793759/anil-khatri
+khanacademy: ImKaka
+
+
 
 # Build settings
 highlighter: rouge

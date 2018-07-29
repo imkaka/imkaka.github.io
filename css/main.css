@@ -54,12 +54,141 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-*/
-body {
 
-   /* color: rgba(255,255,255,0.8);*/
+html {
+    height: 100%;
+    box-sizing: border-box;
 }
+
+
+header {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+
+
 
 ul#soc li {
 display: inline;
 }
+/*
+.footer {
+  text-decoration: none !important;
+}
+
+footer{
+  height: 6%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+*/
+/*
+.footer {
+
+    border-bottom: 6px solid #64b5f6;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+*/
+
+/* Main page with stikky-footer
+-------------------------------------------------- */
+html,
+body {
+  height: 100%;
+  background-color:#fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  /* The html and body elements cannot have any padding or margin. */
+ /* border-top: 4px solid #2361FF;*/
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  padding-bottom: 50px; 
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -65px;
+  /* Pad bottom by footer height */
+  /*padding: 0 0 60px;*/
+}
+
+.social {
+  padding-top: 12px;
+  word-spacing: 25px;
+}
+.social h4 > a {
+  color: #000000;
+}
+.social h4 > a:hover {
+  color: #727272;
+}
+.avatar {
+  padding-top: 4%;
+}
+
+.footer {
+  text-decoration: none !important;
+}
+.text-muted {
+  color: #6b6b6b;
+}
+div.footer{
+  border-bottom: 8px solid #2196f3;
+}
+
+#avatar {
+  border-radius: 100%;
+  width: 170px;
+  height:170px;
+  
+}
+
+#test1, #test2, #test3, #test4, #test5, #test6{
+  opacity: 0;
+}
+
+.name{
+  margin-top: 10px;
+}
+#target{
+  font-size: 42px;
+}
+#target-cursor{
+  font-size: 35px;
+}
+#target-mark{
+  font-size: 30px;
+}
+
+/*
+.container {
+  width: auto;
+  max-width: 800px;
+  text-align: center;
+}*/
+.container .text-muted {
+  margin: 20px 0;
+}
+/*.container a {
+  color: #2361FF;
+}
+.container a:hover {
+  color: #0511FF;
+}
+.img-responsive {
+ display: block;
+ height: auto;
+ max-width: 100%;
+}*/
