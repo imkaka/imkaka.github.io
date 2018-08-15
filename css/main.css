@@ -1,65 +1,121 @@
 
-/*
+/* Main Page 
+-------------------------------------------------- */
+html,
 body {
-   		display: flex;
-    	min-height: 100vh;
-    	flex-direction: column;
-        text-align: center;
-        margin: 60px auto;
-        width: 70%;
-        background:#DDDDDD;
-}
-main {
-      flex: 1 0 auto;
+  height: 100%;
+  background-color:#fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  /* The html and body elements cannot have any padding or margin. */
+ /* border-top: 4px solid #2361FF;*/
 }
 
-nav ul, footer ul {
-    
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: circle;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+/* Wrapper for page content to push down footer */
+#wrap {
+  padding-bottom: 50px; 
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -65px;
+  /* Pad bottom by footer height */
+  /*padding: 0 0 60px;*/
 }
 
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
+
+.panel-default h2 {
+  text-align: left;
+  line-height: 24px;
+  font-size: 22px;
+}
+.panel-default h5 {
+  text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+}
+.panel-default h6 {
+  font-size: 15px;
 }
 
-ul.posts li {
-    list-style: none;
-}
-*/
-body {
-
-   /* color: rgba(255,255,255,0.8);*/
+#pro{
+   font-size: 20px;
 }
 
-ul#soc li {
-display: inline;
+.panel-default h4 a, h5 a {
+  color: #0d47a1;
+}
+
+.panel-default h4 a:hover, h5 a:hover {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+.panel{
+  border-style: none;
+}
+.panel-body {
+  padding-top: -10px;
+  text-align: left;
+}
+
+.social {
+  padding-top: 12px;
+  word-spacing: 25px;
+}
+.social h4 > a {
+  color: #000000;
+}
+.social h4 > a:hover {
+  color: #727272;
+}
+.avatar {
+  padding-top: 4%;
+}
+
+.footer {
+  text-decoration: none !important;
+}
+.text-muted {
+  color: #6b6b6b;
+}
+div.footer{
+  border-bottom: 8px solid #2196f3;
+}
+
+#avatar {
+  border-radius: 100%;
+  width: 170px;
+  height:170px;
+  
+}
+
+#test1, #test2, #test3, #test4, #test5, #test6{
+  opacity: 0;
+}
+
+.name{
+  margin-top: 10px;
+}
+#target{
+  font-size: 48px;
+  font-weight: bold;
+}
+#target-cursor{
+  font-size: 50px;
+  font-weight: bold;
+}
+#target-mark{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+
+.hov:hover {
+  
+  color: #3f51b5;
+  text-decoration: underline;
 }
