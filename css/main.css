@@ -1,8 +1,16 @@
 
-/* Main Page 
+/* Main Page
 -------------------------------------------------- */
 html,
 body {
+  background-image: url(../img/bg.jpeg);
+  width: 100%;
+  background-size: 100%;
+  margin-top: -100px;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   background-color:#fff;
   font-family: 'Source Sans Pro', sans-serif;
@@ -12,7 +20,7 @@ body {
 
 /* Wrapper for page content to push down footer */
 #wrap {
-  padding-bottom: 50px; 
+  padding-bottom: 50px;
   min-height: 100%;
   height: auto;
   /* Negative indent footer by its height */
@@ -85,7 +93,7 @@ div.footer{
   border-radius: 100%;
   width: 170px;
   height:170px;
-  
+
 }
 
 #test1, #test2, #test3, #test4, #test5, #test6{
@@ -115,7 +123,7 @@ div.footer{
 
 
 .hov:hover {
-  
+
   color: #3f51b5;
   text-decoration: underline;
 }
