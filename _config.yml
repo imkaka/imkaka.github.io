@@ -20,7 +20,7 @@ resume_url: https://drive.google.com/file/d/1c9dIV3lm3sHWmudrREI5bTm0Q-ja2ByN/vi
 highlighter: rouge
 markdown: kramdown
 permalink: /:title.html
-theme: jekyll-theme-hacker
+theme: minima
 plugins:
   - jekyll-sitemap
   - jemoji
